@@ -3,9 +3,9 @@ require "language/go"
 class Scw < Formula
   desc "Manage BareMetal Servers from Command Line (as easily as with Docker)"
   homepage "https://github.com/scaleway/scaleway-cli"
-  url "https://github.com/scaleway/scaleway-cli/archive/v1.8.0.tar.gz"
-  sha256 "5f09f335f90686fad7973f721586173a68445d94099cc794a6270b171b0081b3"
-  version "1.8.0"
+  url "https://github.com/scaleway/scaleway-cli/archive/v1.9.0.tar.gz"
+  sha256 "2cf48fb0985d8767330cf4eb48b321101bd9ffde5c479c66e1abe0fee50aec4b"
+  version "1.9.0"
 
   head "https://github.com/scaleway/scaleway-cli.git"
 
@@ -18,6 +18,9 @@ class Scw < Formula
     (buildpath/"src/github.com/scaleway/scaleway-cli").install Dir["*"]
 
     system "go", "build", "-o", "#{bin}/scw", "-v", "-ldflags", "-X  github.com/scaleway/scaleway-cli/pkg/scwversion.GITCOMMIT=homebrew", "github.com/scaleway/scaleway-cli/cmd/scw/"
+ # we remove our .scw-cache.db file, to clean the cache of scw
+ # this file is created and handled by scw
+    rm_f "~/.scw-cache.db"
 
     bash_completion.install "src/github.com/scaleway/scaleway-cli/contrib/completion/bash/scw"
     zsh_completion.install "src/github.com/scaleway/scaleway-cli/contrib/completion/zsh/_scw"
