@@ -3,8 +3,8 @@ require "language/go"
 class DockerMachineDriverScaleway < Formula
   desc "Docker Machine driver for Scaleway"
   homepage "https://github.com/scaleway/docker-machine-driver-scaleway/"
-  url "https://github.com/scaleway/docker-machine-driver-scaleway/archive/v1.0.2.tar.gz"
-  sha256 "3ba3724e1383ef443cbfb759f2f2998c14404ca80bd96b26764c3beba99da921"
+  url "https://github.com/scaleway/docker-machine-driver-scaleway/archive/v1.2.0.tar.gz"
+  sha256 "1751a15209f8f4e43300a99f75098859de44562a71cec901b989657edc9ce82d"
 
   head "https://github.com/scaleway/docker-machine-driver-scaleway.git"
 
