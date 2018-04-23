@@ -4,7 +4,7 @@ class DockerMachineDriverScaleway < Formula
   desc "Docker Machine driver for Scaleway"
   homepage "https://github.com/scaleway/docker-machine-driver-scaleway/"
   url "https://github.com/scaleway/docker-machine-driver-scaleway/archive/v1.3.tar.gz"
-  sha256 "1f52d9cb308b0d94f96ab2d37113940408981c9986189126beb79c6ded7d4276"
+  sha256 "e30253c38cb3f43e66be2ca6dd9f58da870237002ee7a9a4a57d3a29bf45a0da"
 
   head "https://github.com/scaleway/docker-machine-driver-scaleway.git"
 
