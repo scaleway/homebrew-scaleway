@@ -22,7 +22,7 @@ class Scw < Formula
  # this file is created and handled by scw
     rm_f "~/.scw-cache.db"
 
-    bash_completion.install "src/github.com/scaleway/scaleway-cli/contrib/completion/bash/scw"
+    bash_completion.install "src/github.com/scaleway/scaleway-cli/contrib/completion/bash/scw.bash"
     zsh_completion.install "src/github.com/scaleway/scaleway-cli/contrib/completion/zsh/_scw"
   end
 
