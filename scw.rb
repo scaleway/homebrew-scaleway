@@ -6,7 +6,7 @@ class Scw < Formula
   head "https://github.com/scaleway/scaleway-cli.git"
 
   opoo <<~EOS
-    This is the last version released with this formula.
+    DEPRECATED: This is the last version released with this formula.
     Please uninstall this version and use the official formula: brew uninstall -f scw && brew install scw
 
   EOS
