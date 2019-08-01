@@ -5,6 +5,12 @@ class Scw < Formula
   sha256 "307bb2a67cd8b8a7fb58524dfe3f65bbba476496c051e289e76f11d0508a0ab7"
   head "https://github.com/scaleway/scaleway-cli.git"
 
+  opoo <<~EOS
+    This is the last version released with this formula.
+    Please uninstall this version and use the official formula: brew uninstall -f scw && brew install scw
+
+  EOS
+
   bottle do
     cellar :any_skip_relocation
     sha256 "57a21449714df68f713fba876e8c2b4a62de751fd48cd51c15b5109d4a6fb74f" => :mojave
