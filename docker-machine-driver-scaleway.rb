@@ -1,5 +1,3 @@
-require "language/go"
-
 class DockerMachineDriverScaleway < Formula
   desc "Docker Machine driver for Scaleway"
   homepage "https://github.com/scaleway/docker-machine-driver-scaleway/"
